@@ -44,7 +44,13 @@
                 navigation: true,
                 lockAnchors: true,
                 responsiveWidth: 1025,
+
+                afterLoad: function(anchorLink) {
+                    gtag('config', 'UA-247469-6', {'page_path': '/' + anchorLink});
+                }
             });
+
+
         });
     </script>
   </head>
