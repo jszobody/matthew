@@ -209,9 +209,21 @@ section.together {
     background-size: cover;
 }
 
+section.adoption {
+    text-align: center;
+}
+
 section.adoption .content {
-    padding-top: 2rem;
-    margin-bottom: -2rem;
+    margin-bottom: 1rem;
+}
+
+section.adoption img {
+    max-height: 60vh;
+    max-width: 100%;
+}
+
+section.adoption .row img {
+    max-height: 30vh;
 }
 
 
