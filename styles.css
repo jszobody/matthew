@@ -66,6 +66,8 @@ main {
 
 section {
     padding: 0 3rem;
+    background-position: center;
+    background-size: cover;
 }
 
 section.has-slides {
@@ -84,10 +86,6 @@ section .fp-slide img {
     opacity: 1;
 }
 
-.fp-tableCell {
-    position: relative;
-}
-
 #fp-nav.right {
     bottom: 15px;
     right: 10px;
@@ -96,6 +94,16 @@ section .fp-slide img {
 
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
     background-color: #FFF;
+}
+
+section .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    z-index: 3;
+    background-color: rgba(0,0,0,0.3);
 }
 
 section.intro {
@@ -107,13 +115,12 @@ section.intro {
 }
 
 section.intro h1 {
-    margin-top: 100px;
+
 }
 
 section.intro img {
-    float: right;
-    max-width: 60%;
-    max-height: 90%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 section.intro ul {
@@ -136,24 +143,13 @@ section.birth {
     **/
 }
 
-section.birth .content {
-    padding-top: 2rem;
-    margin-bottom: -2rem;
-}
-
 section.release {
     background-image: url(photos/release.jpg);
-    background-size: cover;
 }
 
 section.release .content {
-    position: absolute;
-    left: -3rem;
-    right: -3rem;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 3rem;
-    color: #FFF;
+    top: auto;
 }
 
 section.kids {
@@ -187,30 +183,18 @@ section.kids .row img {
 
 section.bethany {
     background-image: url(photos/bethany1.jpg);
-    background-size: cover;
 }
 
 section.baptism {
     background-image: url(photos/baptism.jpg);
-    background-size: cover;
-}
-
-section.life .content {
-    padding-top: 2rem;
-    margin-bottom: -2rem;
 }
 
 section.together {
     background-image: url(photos/together.jpg);
-    background-size: cover;
 }
 
 section.adoption {
     text-align: center;
-}
-
-section.adoption .content {
-    margin-bottom: 1rem;
 }
 
 section.adoption img {
@@ -272,4 +256,24 @@ section.adoption .row img {
     border-bottom: 5px solid rgba(255, 255, 255, 0);
     transform: translate(-2.5px, 10px) rotate(-45deg);
   }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    section.kids .row img, section.adoption img, section.adoption .row img {
+        max-height: 18vh;
+    }
 }
