@@ -1,0 +1,257 @@
+body {
+    background-color: #313742;
+    color: #d7dde8;
+
+    background-color: #313742;
+    background-image:
+        repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+        repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+        linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+        linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+    background-size: 70px 120px;
+}
+
+a, a:hover {
+    color: #d7dde8;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    margin: 0;
+}
+
+/** From https://ctrlq.org/code/19764-black-white-image-colored **/
+img {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+    /* Firefox 10+, Firefox on Android */
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+    /* IE 6-9 */
+    -moz-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,.19), 0 6px 6px rgba(0,0,0,.23);
+}
+
+img:hover, img:active {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
+  -webkit-filter: none;
+  filter: none;
+  transform: scale(1.02);
+
+  box-shadow: 0 19px 38px rgba(0,0,0,.3), 0 15px 12px rgba(0,0,0,.22);
+}
+
+main {
+    display: none;
+}
+
+section {
+    padding: 0 3rem;
+}
+
+section.has-slides {
+    text-align: center;
+}
+
+section .fp-slide img {
+    max-width: 85%;
+    max-height: 85%;
+}
+
+dl {
+    margin: 0;
+}
+
+dt, dd {
+    margin: 0 10px 0 0;
+    display: inline-block;
+}
+dt {
+    opacity: 0.7;
+    font-weight: normal;
+}
+dd {
+    font-weight: bold;
+}
+
+.fp-controlArrow {
+    opacity: 0.5;
+}
+.fp-controlArrow:hover {
+    opacity: 1;
+}
+
+.fp-tableCell {
+    position: relative;
+}
+
+#fp-nav.right {
+    bottom: 15px;
+    right: 10px;
+    top: auto;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background-color: #FFF;
+}
+
+section.intro {
+    /** background-color: #313742; **/
+    /**
+    background-color: #111515;
+    background-image: linear-gradient(160deg, #111515 0%, #5c8e88 100%);
+    **/
+}
+
+section.intro h1 {
+    margin-top: 100px;
+}
+
+section.intro img {
+    float: right;
+    max-width: 60%;
+    max-height: 90%;
+}
+
+section.birth {
+    /** background-color: #1e2127; **/
+
+    /**
+    background-color: #730e32;
+    background-image: linear-gradient(19deg, #730e32 0%, #1e2127 75%);
+    **/
+}
+
+section.birth .content {
+    padding-top: 2rem;
+    margin-bottom: -2rem;
+}
+
+section.release {
+    background-image: url(photos/release.jpg);
+    background-size: cover;
+}
+
+section.release .content {
+    position: absolute;
+    left: -3rem;
+    right: -3rem;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 3rem;
+    color: #FFF;
+}
+
+section.kids {
+    /**
+    background-color: #1f1c2c;
+    background-image: linear-gradient(0deg, #1f1c2c 0%, #928dab 100%);
+    **/
+}
+
+section.kids .row {
+    max-height: 80vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+section.kids .row div {
+    overflow-x: hidden;
+    margin: 5px;
+    transition: all 0.5s ease-in;
+}
+
+section.kids .row div:hover {
+    transform: scale(1.02);
+}
+
+section.kids .row img {
+    height: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+section.bethany {
+    background-image: url(photos/bethany1.jpg);
+    background-size: cover;
+}
+
+section.baptism {
+    background-image: url(photos/baptism.jpg);
+    background-size: cover;
+}
+
+section.life .content {
+    padding-top: 2rem;
+    margin-bottom: -2rem;
+}
+
+section.together {
+    background-image: url(photos/together.jpg);
+    background-size: cover;
+}
+
+section.adoption .content {
+    padding-top: 2rem;
+    margin-bottom: -2rem;
+}
+
+
+/** From https://codepen.io/anon/pen/mqeGVj **/
+.arrows {
+  position: relative;
+  /**/
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+.arrows:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-left: 5px solid rgba(255, 255, 255, 0.7);
+  border-bottom: 5px solid rgba(255, 255, 255, 0.7);
+  transform: translate(5px, 20px) rotate(-45deg);
+  animation: arrows 5s linear infinite;
+}
+.arrows:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-left: 5px solid rgba(255, 255, 255, 0.7);
+  border-bottom: 5px solid rgba(255, 255, 255, 0.7);
+  transform: translate(10px, 0px) rotate(-45deg);
+  animation: arrows 5s linear infinite -2.5s;
+}
+
+@keyframes arrows {
+  0% {
+    border-left: 5px solid rgba(255, 255, 255, 0);
+    border-bottom: 5px solid rgba(255, 255, 255, 0);
+    transform: translate(-2.5px, -10px) rotate(-45deg);
+  }
+  10%, 90% {
+    border-left: 5px solid rgba(255, 255, 255, 0);
+    border-bottom: 5px solid rgba(255, 255, 255, 0);
+  }
+  50% {
+    border-left: 5px solid rgba(255, 255, 255, 0.7);
+    border-bottom: 5px solid rgba(255, 255, 255, 0.7);
+    transform: translate(-2.5px, 0px) rotate(-45deg);
+  }
+  100% {
+    border-left: 5px solid rgba(255, 255, 255, 0);
+    border-bottom: 5px solid rgba(255, 255, 255, 0);
+    transform: translate(-2.5px, 10px) rotate(-45deg);
+  }
+}

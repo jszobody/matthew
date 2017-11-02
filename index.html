@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Meet Matthew Szobody</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.js" integrity="sha256-SwWHEBZICAfuD82HWp9i1VmxX0dXjllMm6cNKvucHAY=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+        	$('main').show().fullpage({
+                sectionSelector: 'section',
+                navigation: true,
+                lockAnchors: true
+                //paddingTop: '2em',
+            });
+        });
+    </script>
+  </head>
+  <body>
+      <main>
+      	<section class="intro" data-anchor="intro">
+            <img src="/photos/uss-alabama.jpg"/>
+
+            <h1>Meet Matthew</h1>
+            <dl>
+                <dt>born</dt><dd>June 25, 2017</dd>
+                <dt>kid #</dt><dd>5</dd>
+                <dt>sibling rating</dt><dd>10/10</dd>
+            </dl>
+
+            <div class="lead" style="position: absolute; bottom: 3rem;">
+                <div class="arrows ml-2 mr-2"></div>
+                <a href="javascript:;" onclick="$.fn.fullpage.moveTo(2);">Scroll down</a>
+            </div>
+        </section>
+      	<section class="birth has-slides" data-anchor="birth">
+            <div class="content lead">
+                Matthew was transferred to a children's hospital with health problems, and spent three weeks in the NICU undergoing treatment.
+            </div>
+            <div class="slide"><img src="/photos/birth1.jpg"/></div>
+        	<div class="slide"><img src="/photos/birth2.jpg"/></div>
+            <div class="slide"><img src="/photos/birth4.jpg"/></div>
+        	<div class="slide"><img src="/photos/birth3.jpg"/></div>
+        </section>
+      	<section class="release" data-anchor="discharge">
+            <div class="content">
+                <h2>Three weeks later he met the rest of the family</h2>
+            </div>
+        </section>
+      	<section class="kids" data-anchor="kids">
+            <div class="row">
+                <div class="col-sm"><img src="/photos/kid1.jpg"/></div>
+                <div class="col-sm"><img src="/photos/kid2.jpg"/></div>
+                <div class="col-sm"><img src="/photos/kid3.jpg"/></div>
+                <div class="col-sm"><img src="/photos/kid4.jpg"/></div>
+            </div>
+        </section>
+        <section class="bethany" data-anchor="bethany"></section>
+        <section class="life has-slides" data-anchor="life">
+            <div class="content lead">
+                While working through the adoption process, Matthew settled in, and even traveled Europe with us.
+            </div>
+            <div class="slide"><img src="/photos/life1.jpg"/></div>
+        	<div class="slide"><img src="/photos/life2.jpg"/></div>
+            <div class="slide"><img src="/photos/life3.jpg"/></div>
+        	<div class="slide"><img src="/photos/life4.jpg"/></div>
+            <div class="slide"><img src="/photos/life5.jpg"/></div>
+        </section>
+        <section class="adoption" data-anchor="adoption">
+            <div class="content lead">
+                Matthew was officially adopted and declared a Szobody on October 30. He is ours.
+            </div>
+        </section>
+        <section class="together" data-anchor="together"></section>
+    </main>
+  </body>
+</html>
