@@ -31,6 +31,7 @@ h1 {
 
 h2 {
     margin: 0;
+    font-weight: normal;
 }
 
 /** From https://ctrlq.org/code/19764-black-white-image-colored **/
@@ -76,22 +77,6 @@ section .fp-slide img {
     max-height: 85%;
 }
 
-dl {
-    margin: 0;
-}
-
-dt, dd {
-    margin: 0 10px 0 0;
-    display: inline-block;
-}
-dt {
-    opacity: 0.7;
-    font-weight: normal;
-}
-dd {
-    font-weight: bold;
-}
-
 .fp-controlArrow {
     opacity: 0.5;
 }
@@ -129,6 +114,17 @@ section.intro img {
     float: right;
     max-width: 60%;
     max-height: 90%;
+}
+
+section.intro ul {
+    opacity: 0.7;
+    list-style: none;
+    padding: 0;
+}
+
+section.intro strong {
+    opacity: 1;
+    color: #FFF;
 }
 
 section.birth {
